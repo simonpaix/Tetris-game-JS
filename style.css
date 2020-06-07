@@ -1,0 +1,43 @@
+.container{
+/* display applies to the organization to the divs inside the container */
+  display:flex;
+}
+
+.grid{
+  /* squares are 20x20 pixels, 20x10 squares in the grid */
+  width: 200px;
+  height: 400px;
+  background-color: yellow;
+
+  /* display makes sure the red squares appear stacked in a line */
+  display:flex;
+
+  /* wrap: flex items will wrap onto multiple lines, from top to bottom. makes sure the squares appear stacked over each other as soon as they dont fit in the grid */
+  flex-wrap: wrap;
+}
+
+/* style each square */
+.grid div{
+    width: 20px;
+    height: 20px;
+  }
+
+
+.tetromino{
+  background-color: blue;
+}
+
+.mini-grid{
+  width:80px;
+  height:80px;
+  display:flex;
+  flex-wrap: wrap;
+  background-color:yellow;
+  margin-left:50px;
+}
+
+.mini-grid div{
+  height:20 px;
+  width: 20px;
+}
+

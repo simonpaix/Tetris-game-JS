@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Basic Tetris</title>
+  </head>
+
+<body>
+
+  <h3>Score: <span id="score"></span></h3>
+  <button id="start-button">Start/Pause </button>
+
+<!-- container is here to put grid and mini-grid side by side -->
+  <div class="container">
+    <!-- these divs create the grid 20x10 -->
+    <!-- could use a for loop instead -->
+    <div class="grid">
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+      <div class="taken"> </div>
+
+    </div>  
+
+    <div class="mini-grid">
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    </div>
+  </div>
+</body>
+</html>
